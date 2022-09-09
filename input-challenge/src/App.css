@@ -81,15 +81,16 @@ h3 {
 .main-container {
   margin-left: 33px;
   margin-top: 53px;
+  max-width: 70em;
 }
 
-.button-layout {
+.input-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  margin-bottom: 4em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 2.5em;
 }
 
-.button-div > p {
+.input-div > p {
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;

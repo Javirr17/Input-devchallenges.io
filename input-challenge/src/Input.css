@@ -6,7 +6,44 @@
     margin-top: 20px;
 }
 
-input {
+.helperText {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    font-family: "Noto Sans JP";
+    color: #828282;
+}
+
+.startIcon {
+    position: absolute;
+    padding-top: .65em;
+    padding-left: 0.5em;
+}
+
+.endIcon {
+    position: absolute;
+    padding-top: .65em;
+    margin-left: 6.5em;
+    background: transparent;
+}
+
+.smallIcon {
+    padding-top: .38em;
+}
+
+.focusDefaultColor {
+    color: #2962FF;
+}
+
+.errorColor {
+    color: #D32F2F;
+}
+
+.hoverColor {
+    color: black;
+}
+
+input{
     width: 200px;
     height: 56px;
     border-radius: 8px;
@@ -16,15 +53,55 @@ input {
     font-weight: 500;
     font-family: "Noto Sans JP";
     line-height: 20px;
-    padding: 15px;
+    padding-left: 15px;
 }
 
-input:hover {
-    border: 1px solid #333333;  
+textarea {
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid #828282;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Noto Sans JP";
+    line-height: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
 }
 
-input:focus {
+input:focus, textarea:focus {
     outline: none;
     border: 1px solid #2962FF;
     color: #2962FF;
 }
+
+input[data-type = "errorType"], textarea[data-type = "errorType"]{
+    border: 1px solid #D32F2F;
+    color: #D32F2F;
+}
+
+input:hover, textarea:hover {
+    border: 1px solid #333333;  
+}
+
+.disabled {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+}
+
+input:hover.disabled{
+    border: none;
+}
+
+.morePadding {
+    padding-left: 40px;
+}
+
+.small {
+    height: 40px;
+}
+
+.full-width {
+    width: 100%;
+}
+

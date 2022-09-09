@@ -17,45 +17,84 @@ function App() {
       </div>
       <div>
         <div className="main-container">
-        <h3>Inputs</h3>
-    
-        <section className="button-layout">
-            <div className="button-div">
-              <p>{"<Input />"}</p>
-              <Input />
-            </div>
-            
-            <div className="button-div">
-              <p>{}</p>
+          <h3>Inputs</h3>
+      
+          <section className="input-layout">
+              <div className="input-div">
+                <p>{"<Input />"}</p>
+                <Input />
+              </div>
               
-            </div>
+              <div className="input-div">
+                <p>{"<Input error/>"}</p>
+                <Input error/>
+              </div>
 
-            <div className="button-div">
-              <p>{}</p>
+              <div className="input-div">
+                <p>{"<Input disabled/>"}</p>
+                <Input disabled/>
+              </div>
+          </section>
+
+          <section className="input-layout">
+              <div className="input-div">
+                <p>{"<Input helperText=\"Some interesting text\"/>"}</p>
+                <Input helperText="Some interesting text"/>
+              </div>
               
-            </div>
+              <div className="input-div">
+                <p>{"<Input helperText=\"Some interesting text\" error/>"}</p>
+                <Input helperText="Some interesting text" error/>
+              </div>
+          </section>          
 
-            <div className="button-div">
-              <p>{}</p>
+          <section className="input-layout">
+              <div className="input-div">
+                <p>{"<Input startIcon=\"Key\"/>"}</p>
+                <Input startIcon="Key"/>
+              </div>
               
-            </div>
+              <div className="input-div">
+                <p>{"<Input endIcon=\"Lock\"/>"}</p>
+                <Input endIcon="Lock"/>
+              </div>
+          </section> 
 
-            <div className="button-div">
-              <p>{}</p>
+          <section className="input-layout">
+              <div className="input-div">
+                <p>{"<Input value=\"Text\"/>"}</p>
+                <Input value="Text"/>
+              </div>
               
-            </div>
+              <div className="input-div">
+                <p>{"<Input size=\"sm\" endIcon=\"Close\"/>"}</p>
+                <Input size="sm" endIcon="close"/>
+              </div>
 
-            <div className="button-div">
-              <p>{}</p>
-              
-            </div>
+              <div className="input-div">
+                <p>{"<Input size=\"md\" error/>"}</p>
+                <Input size="md" error/>
+              </div>              
+          </section>           
 
-        </section>
+          <section className="input-layout">
+              <div className="input-div">
+                <p>{"<Input fullWidth/>"}</p>
+                <Input fullWidth/>
+              </div>          
+          </section>  
 
-        <footer>
-          <p>Icons: https://material.io/resources/icons/?style=round</p>
-          <p id="creator-msg">created by Javier Romero - devChallenges.io</p>
-        </footer>
+          <section className="input-layout">
+              <div className="input-div">
+                <p>{"<Input multiline row=\"4\"/>"}</p>
+                <Input multiline row="4"/>
+              </div>          
+          </section>  
+
+          <footer>
+            <p>Icons: https://material.io/resources/icons/?style=round</p>
+            <p id="creator-msg">created by Javier Romero - devChallenges.io</p>
+          </footer>
         </div>
       </div>
     </div>
